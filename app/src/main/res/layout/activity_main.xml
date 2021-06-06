@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".Day1.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Day1.MainActivity">
+
+        <include layout="@layout/public_toolbar" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioGroup
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FDFDFD">
+
+            <RadioButton
+                android:drawableTop="@drawable/selector_home_rb_img"
+                android:text="首页"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/rb_home" />
+
+            <RadioButton
+                android:drawableTop="@drawable/selector_game_rb_img"
+                android:text="游戏"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/rb_game" />
+
+            <RadioButton
+                android:drawableTop="@drawable/selector_chat_rb_img"
+                android:text="聊天"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/rb_chat" />
+
+            <RadioButton
+                android:drawableTop="@drawable/selector_event_rb_img"
+                android:text="动态"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/rb_event" />
+
+            <RadioButton
+                android:drawableTop="@drawable/selector_me_rb_img"
+                android:text="个人"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/rb_me" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

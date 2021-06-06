@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@mipmap/ic_search"
+        android:title="搜索"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/create_chat"
+        android:icon="@mipmap/ic_create_chat"
+        android:title="发起聊天"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_friend"
+        android:icon="@mipmap/ic_add_friend"
+        android:title="添加朋友"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/scan"
+        android:icon="@mipmap/ic_scan"
+        android:title="扫一扫"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pay"
+        android:icon="@mipmap/ic_pay"
+        android:title="收付款"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/help"
+        android:icon="@mipmap/ic_help"
+        android:title="帮助"
+        app:showAsAction="never" />
+
+
+</menu>
